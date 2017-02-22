@@ -1,0 +1,19 @@
+#table-parking {
+  margin-bottom: 0;
+}
+
+#more-info-toggle {
+  color: #878787;
+  font-size: 0.9em;    
+}
+
+#more-info-content {
+  display: none;
+}
+
+.break-word {
+  word-wrap: break-word;
+}
+
+
+
