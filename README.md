@@ -1,6 +1,5 @@
 # Vrije Parking Gent
-Parking bezetting Gent
-
-Demo: https://brampeirs.github.io/parkingGent
-
 Haalt parkeerbezetting op via REST API.
+
+Demo: <a href="https://brampeirs.github.io/parkingGent" target="_blank">https://brampeirs.github.io/parkingGent</a>
+
