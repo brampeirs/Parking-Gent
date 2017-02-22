@@ -1,4 +1,4 @@
-# parkingGent
+# Vrije Parking Gent
 Parking bezetting Gent
 
 Demo: https://brampeirs.github.io/parkingGent
