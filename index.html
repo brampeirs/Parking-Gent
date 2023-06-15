@@ -7,40 +7,25 @@
     <title>Parking Gent</title>
   </head>
   <body>
-    <body>
-      <div class="container">
-        <h1>Vrije Parking Gent</h1>
-        <table id="table-parking" class="table table-hover">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Parking</th>
-              <th>Vrij</th>
-            </tr>
-          </thead>
-          <tbody id="tablePrint">
-            <!-- content will be replaced -->
-          </tbody>
-        </table>
-        <a id="more-info-toggle" href="#" onclick="showInfoTableParking()"
-          >Meer info</a
-        >
-        <div id="more-info-content">
-          <p>
-            Data wordt via volgende api opgehaald:
-            <code class="break-word"
-              >https://data.stad.gent/api/records/1.0/search/?dataset=bezetting-parkeergarages-real-time&q=&sort=-occupation&facet=name&facet=lastupdate&facet=description&facet=categorie</code
+    <div class="container">
+      <table id="table-parking" class="table table-hover">
+        <thead>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
             >
-            <br />Data wordt om de 5 seconden vernieuwd. <br />Kleuren:
-            <span class="label label-success">+ 300</span>
-            <span class="label label-warning">- 300</span>
-            <span class="label label-danger">- 150</span>
-          </p>
-        </div>
-      </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="js/main.js"></script>
-    </body>
+              #
+            </th>
+            <td class="px-6 py-4">Parking</td>
+            <td class="px-6 py-4">Vrij</td>
+          </tr>
+        </thead>
+        <tbody id="tablePrint">
+          <!-- content will be replaced -->
+        </tbody>
+      </table>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
