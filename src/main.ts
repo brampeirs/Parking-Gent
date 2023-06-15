@@ -69,7 +69,10 @@ function updateTable() {
         "</tr>";
     }
 
-    document.getElementById("tablePrint").innerHTML = tableBody;
+    const table = document.getElementById("tablePrint");
+    if (table) {
+      table.innerHTML = tableBody;
+    }
   });
 }
 
