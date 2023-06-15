@@ -43,16 +43,9 @@ fetchData$.subscribe((data) => {
 
 function updateTable() {
   let tableBody = "";
-  let labelStatus = "";
+
   fetchData$.subscribe((data) => {
     for (const [i, item] of data.entries()) {
-      if (item.availablecapacity < 150) {
-        labelStatus = "label-danger";
-      } else if (item.availablecapacity < 300) {
-        labelStatus = "label-warning";
-      } else {
-        labelStatus = "label-success";
-      }
       tableBody +=
         "<tr class='bg-white border-b dark:bg-gray-800 dark:border-gray-700'>" +
         "<th scope='row' class='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'>" +
