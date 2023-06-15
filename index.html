@@ -1,39 +1,46 @@
 <!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>Parking Gent</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">  
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-  <link rel="stylesheet" href="css/style.css">  
-</head>
-
-<body>
-  <div class="container">
-  <h1>Vrije Parking Gent</h1>
-  <table id="table-parking" class="table table-hover">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Parking</th>
-        <th>Vrij</th>
-      </tr>
-    </thead>
-    <tbody id="tablePrint">
-      <!-- content will be replaced -->
-    </tbody>
-  </table>
-    <a id="more-info-toggle" href="#" onclick="showInfoTableParking()">Meer info</a>
-  <div id="more-info-content">
-    <p>Data wordt via volgende api opgehaald: <code class="break-word">https://datatank.stad.gent/4/mobiliteit/bezettingparkingsrealtime.json</code> <br>Data wordt om de 5 seconden vernieuwd.
-      <br>Kleuren:              
-        <span class="label label-success">+ 300</span>
-        <span class="label label-warning">- 300</span>
-        <span class="label label-danger">- 150</span>      
-    </p>
-  </div>
-</div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-  <script src="js/main.js"></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parking Gent</title>
+  </head>
+  <body>
+    <body>
+      <div class="container">
+        <h1>Vrije Parking Gent</h1>
+        <table id="table-parking" class="table table-hover">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Parking</th>
+              <th>Vrij</th>
+            </tr>
+          </thead>
+          <tbody id="tablePrint">
+            <!-- content will be replaced -->
+          </tbody>
+        </table>
+        <a id="more-info-toggle" href="#" onclick="showInfoTableParking()"
+          >Meer info</a
+        >
+        <div id="more-info-content">
+          <p>
+            Data wordt via volgende api opgehaald:
+            <code class="break-word"
+              >https://data.stad.gent/api/records/1.0/search/?dataset=bezetting-parkeergarages-real-time&q=&sort=-occupation&facet=name&facet=lastupdate&facet=description&facet=categorie</code
+            >
+            <br />Data wordt om de 5 seconden vernieuwd. <br />Kleuren:
+            <span class="label label-success">+ 300</span>
+            <span class="label label-warning">- 300</span>
+            <span class="label label-danger">- 150</span>
+          </p>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="js/main.js"></script>
+    </body>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
